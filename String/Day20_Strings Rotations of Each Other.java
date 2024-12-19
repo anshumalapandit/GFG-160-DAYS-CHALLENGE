@@ -17,6 +17,21 @@ class Solution {
         return false;
     }
 }
+// another way : will also give tle error :
+class Solution {
+    // Function to check if two strings are rotations of each other or not.
+    public static boolean areRotations(String s1, String s2) {
+        // Your code here
+        if(s1.length()!=s2.length()){
+            return false;
+        }
+        s1=s1+s1;
+        if(s1.contains(s2)){
+            return true;
+        }
+        return false;
+    }
+}
 Step-by-Step Explanation:
 s1.charAt(n - 1):
 
